@@ -71,11 +71,23 @@ function step(timestamp) {
     // achievements. Titta dock på upgrades arrayen och gör något rimligare om du
     // vill ha achievements.
     // på samma sätt kan du även dölja uppgraderingar som inte kan köpas
+
     if (moneyPerClick == 10 && !achievementTest) {
         achievementTest = true;
-        message('Killing spree', 'achievement');
+        message('the undead legion rises', 'achievement');
     }
 
+    
+    if (moneyPerClick == 50 && !achievementTest) {
+        achievementTest = true;
+        message('army reborn', 'achievement');
+    }
+
+    if (moneyPerClick == 100 && !achievementTest) {
+        achievementTest = true;
+        message('world domination', 'achievement');
+    }
+    
     window.requestAnimationFrame(step);
 }
 
@@ -112,14 +124,20 @@ upgrades = [
         amount: 1,
     },
     {
-        name: 'Ancient magic',
+        name: 'flesh and blood',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Cyborg upgrades',
+        name: 'Ancient magic',
         cost: 1000,
         amount: 100,
+    },
+
+    {
+        name: 'Cyborg upgrades',
+        cost: 100000,
+        amount: 100000,
     },
 ];
 

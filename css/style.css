@@ -89,8 +89,8 @@ select {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #f8f8f8;
-    color: #121212;
+    background-color: #F9F6EE;
+    color: #292525;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* För att göra footern sticky så har vi flex på bodyn och då räcker det med 
