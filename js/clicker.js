@@ -167,7 +167,7 @@ function createCard(upgrade) {
     const cost = document.createElement('p');
 
     header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
-    cost.textContent = `Köp för ${upgrade.cost} corpses.`;
+    cost.textContent = `buy for ${upgrade.cost} corpses.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {

@@ -57,7 +57,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+    font: initial;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     background-color: #F9F6EE;
     color: #292525;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Special Elite', cursive;
 }
 /* För att göra footern sticky så har vi flex på bodyn och då räcker det med 
  * margin-top auto här.
@@ -225,5 +225,5 @@ footer {
  * font vikt är oftast 400
  */
 .title {
-    font-weight: 600;
+    font-weight: 400;
 }
